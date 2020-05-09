@@ -1,0 +1,56 @@
+@import url('./styles/content.css');
+@import url('./styles/dialog.css');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #102010;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.content-wrapper{
+  background-color: 
+}
+.box {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin: 3px 3px;
+  display: inline-block;
+}
+.bento-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bento-wrapper > div {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bento:hover .box:nth-child(2),
+.bento:hover .box:nth-child(4),
+.bento:hover .box:nth-child(6),
+.bento:hover .box:nth-child(8){
+  opacity: 0;
+}
+
