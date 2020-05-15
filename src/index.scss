@@ -1,5 +1,6 @@
-@import url('./styles/content.css');
-@import url('./styles/dialog.css');
+@import '~bootstrap/scss/bootstrap';
+@import './styles/content.css';
+@import './styles/dialog.css';
 
 body {
   margin: 0;
@@ -8,7 +9,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #102010;
   overflow: hidden;
 }
 
@@ -19,9 +19,6 @@ code {
 *{
   margin: 0;
   padding: 0;
-}
-.content-wrapper{
-  background-color: 
 }
 .box {
   width: 8px;

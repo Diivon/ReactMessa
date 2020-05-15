@@ -11,7 +11,7 @@ function getBuddyInfo(id){
 function DialogHeader({buddyID}){
 	let buddyInfo = getBuddyInfo(buddyID);
 	return (
-		<div className = "dialog-header">
+		<div className = "dialog-header w-100 pl-3 pr-3 align-middle">
 			<Icon src = {buddyInfo.avatar_src} />
 			<BuddyName name = {buddyInfo.firstname} />
 			<BentoMenu />
@@ -33,7 +33,7 @@ function Icon({src}){
 
 function BuddyName({name}) {
 	return (
-		<p className = "buddy-name">{name}</p>
+		<p className = "buddy-name mb-0">{name}</p>
 	)
 }BuddyName.propTypes = {
 	name: PropTypes.string.isRequired
