@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react';
 
-export default function Bubble({message, onSelect}){
-	let m  = message; 
+export default function Bubble({message, onReply, onChoose}){
+	let m  = message;
+	let [isSelected, setIsSelected] = useState(false);
 
 	let cl = ['bubble-wrapper', 'w-100'];
 	if (m.from_id !== 0) cl.push('left')
+	if (isSelected) cl.push('selected')
 
 	let replied_message = '';
 	if (typeof m.replied !== 'undefined' && m.replied.text !== ''){
@@ -16,7 +18,8 @@ export default function Bubble({message, onSelect}){
 
 	return(
 		<div className = {cl.join(' ')} 
-			onDoubleClick = {() => onSelect(m.ts)}
+			onDoubleClick = {() => onReply(m.ts)}
+			onClick = {() => {setIsSelected(!isSelected); onChoose(m.ts)}}
 		>
 			{replied_message}
 			<div 

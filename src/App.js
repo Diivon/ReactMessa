@@ -1,12 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Dialog from './Dialog'
+import Glance from './Glance'
 
 function App() {
   return (
   <React.Fragment>
-    <div className = "col-md-8 container content-wrapper">
-      <h1>TODO</h1>
-    </div>
+    <Glance />
     <Dialog />
   </React.Fragment>
   );

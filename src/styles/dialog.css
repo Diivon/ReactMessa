@@ -49,6 +49,12 @@
 	flex-direction: column;
 	margin-top: 10px;
 }
+.dialog-wrapper > .dialog-body > .bubble-wrapper.selected > .bubble{
+	box-shadow: 0 0 2px 2px blue;
+}
+.dialog-wrapper > .dialog-body > .bubble-wrapper.left.selected > .bubble{
+	box-shadow: 0 0 2px 2px red;
+}
 .dialog-wrapper > .dialog-body > .bubble-wrapper > .reply-message{
 	text-align: right;
 	width: 50%;

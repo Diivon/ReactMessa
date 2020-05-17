@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import PropTypes from 'prop-types';
 import Bubble from './Bubble';
 
-function DialogBody({messages, onSelect}){
+function DialogBody({messages, onReply, onChoose}){
 	return (
 		<div className = "dialog-body container-fluid p-3">
 			{messages
@@ -13,7 +13,8 @@ function DialogBody({messages, onSelect}){
 					<Bubble 
 						key = {m.ts}
 						message = {m} 
-						onSelect = {onSelect}
+						onReply = {onReply}
+						onChoose = {onChoose}
 					/>))}
 		</div>
 	)
