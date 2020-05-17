@@ -1,3 +1,4 @@
 .content-wrapper{
-	background-color: gray;
+	background: linear-gradient(to right, #1E1414 -3%, black 3%, black 95%, #14141E 103%);
+	color: white;
 }

@@ -6,13 +6,6 @@ import Loader from './Loader'
 
 
 export default function Dialog(){
-	let a = [
-		 {from_id: 435, ts: 1588951786787, text: "Hello!"}
-		,{from_id: 0, ts: 1588951786788, text: "Hi!"}
-		,{from_id: 0, ts: 1588951786789, text: "How are you?)"}
-		,{from_id: 435, ts: 1588951786790, text: "i'm fine, thanks"}
-		,{from_id: 0, ts: 1588951786791, text: "Great!", replied : {from_id: 435, ts: 1588951786790, text: "i'm fine, thanks"}}
-	]
 	let answer_variants = ['Привет', 'Не думаю', 'Окей', 'Да, я тоже так думаю', 'Думаешь?', 'Хехехехехех)', 'Ой!', 'мне надо идти', ]
 
 	let [messages, setMessages] = useState([]);
@@ -27,10 +20,11 @@ export default function Dialog(){
 		let lastElement = messages[messages.length - 1];
 		if (lastElement.from_id === 0){
 			setTimeout(() => {
-			addMessage(435, new Date().getTime(), answer_variants[Math.floor(Math.random() * answer_variants.length)])
-			}, (Math.floor(Math.random() * 1500)));
+				addMessage(435, new Date().getTime(), answer_variants[Math.floor(Math.random() * answer_variants.length)]);
+				localStorage.messages = JSON.stringify(messages);
+				}, (Math.floor(Math.random() * 1500))
+			);
 		}
-		localStorage.messages = JSON.stringify(messages);
 	}, [messages])
 	
 	let [replied_ts, setReplied] = useState(0);

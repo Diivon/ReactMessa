@@ -92,3 +92,10 @@ code {
     opacity: 0;
   }
 }
+.gc-navbar{
+  height: 60px;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to left, var(--blue) 0%, white 80%);
+  border-image-slice: 1;
+}
