@@ -18,8 +18,9 @@ function DialogInput({placeholder, buddyID, onSend, repliedText, onUnReply}){
 				onChange = {e => setText(e.target.value)}
 				onKeyUp =  {e => {
 					if (e.key === 'Enter'){
+						if (text.trim() === "") return;
 						e.preventDefault();
-						onSend(buddyID, new Date().getTime(), text);
+						onSend(0, new Date().getTime(), text.trim());
 						setText('');
 					}	
 				}}

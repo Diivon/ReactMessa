@@ -38,6 +38,7 @@
 	padding-left: 20px;
 	flex-grow: 2;
 }
+.dialog-wrapper > .dialog-body::-webkit-scrollbar { width: 0; }
 .dialog-wrapper > .dialog-body{
 	display: flex;
 	flex-direction: column-reverse;
