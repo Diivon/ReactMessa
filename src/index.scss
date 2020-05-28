@@ -99,3 +99,26 @@ code {
   border-image: linear-gradient(to left, var(--blue) 0%, white 80%);
   border-image-slice: 1;
 }
+.gc-navbar-brand{
+  border-right: 2px solid white;
+  padding-right: 1rem;
+}
+.gc-recorder{
+  width: 70px;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+.gc-recorder:hover{
+  background: radial-gradient(at center, black 0%, black 40%, #AD3C3C 90%);
+  border-color: #AD3C3C;
+}
+
+.gc-row-h{height: 35px}
+.gc-row-1{box-sizing: border-box; margin: 5px 0; height: 70px}
+.gc-row-2{box-sizing: border-box; margin: 5px 0; height: 150px}
+.gc-row-3{box-sizing: border-box; margin: 5px 0; height: 230px}
+.gc-row-4{box-sizing: border-box; margin: 5px 0; height: 310px}
+.gc-row-5{box-sizing: border-box; margin: 5px 0; height: 390px}
+.gc-row-6{box-sizing: border-box; margin: 5px 0; height: 470px}
+.gc-row-7{box-sizing: border-box; margin: 5px 0; height: 550px}
+.gc-row-8{box-sizing: border-box; margin: 5px 0; height: 630px}

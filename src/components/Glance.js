@@ -1,10 +1,15 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import Recorder from './Recorder'
 
 export default function Glance(){
 	return (
-    <div className = "container-fluid">
-    <h1>Glance</h1>
-    </div>
+		<>
+		<div className = "col-lg-11 bg-primary">
+		Oppa
+		</div>
+		<div className = "col-lg-1 bg-danger">
+			<Recorder />
+		</div>
+		</>
 	)
 }

@@ -10,8 +10,8 @@ function App() {
   <BrowserRouter>
 	  <div className = "col-md-8 content-wrapper p-0">
 		  <nav className = "navbar navbar-dark navbar-expand-lg gc-navbar">
-      	<div className = "navbar-brand">Glance</div>
-      	<ul className = "navbar-nav ml-2">
+      	<div className = "navbar-brand gc-navbar-brand">Glance</div>
+      	<ul className = "navbar-nav">
       		<li className = "nav-item">
       			<NavLink className = "nav-link" to = "/" exact>Home</NavLink>
       		</li>

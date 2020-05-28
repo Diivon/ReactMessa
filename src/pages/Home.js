@@ -3,6 +3,8 @@ import Glance from './../components/Glance'
 
 export default function Home(){
 	return(
-		<Glance />
+		<div className = "container-fluid p-0">
+			<Glance />
+		</div>
 	)
 }
